@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="container bg-success w-75 ">
+        <h1>Update your details</h1>
+        <form action="/user/update" method="post">
+            <% todo.map((val,index)=>{%> 
+                <input type="hidden" placeholder="" value="<%= val._id %>" name="id">
+                <input type="text" id="" placeholder="<%=todo.something_todo%>" name="something_todo" value="" class="form-control ">
+                <input type="text" id="" placeholder="<%= todo.time_todo%>" name="time_todo" value="" class="form-control my-2">
+                <input type="text" id="" placeholder="<%=todo.date_todo%>" name="date_todo" value="" class="form-control my-2">
+                <% }) %> 
+                <button class="btn btn-danger w-50 my-3">add todo list</button>
+                </form>
+    </div>
+    
+    
+    
+    
+</body>
+</html>

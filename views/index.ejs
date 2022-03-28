@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>todo list</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container bg-success w-75  ">
+        <h2>todo list</h2> 
+
+        <form action="/user" method="post">      
+            <input type="text" id="" placeholder="what_todo" name="something_todo" class="form-control my-2">
+            <input type="text" id="" placeholder="time" name="time_todo" class="form-control my-2">
+            <input type="text" id="" placeholder="date" name="date_todo" class="form-control my-2">
+            <button class="btn btn-danger w-50 my-3">add todo list</button>
+        </form>
+        <form action="/user/todo" method="get">
+            <button class="btn btn-secondary w-50 mx-5">view list</button>
+        </form>
+    </div>
+</body>
+</html>
